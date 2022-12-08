@@ -13,11 +13,14 @@ export default function BasicTabs() {
     setValue(newValue);
 
     switch (newValue) {
-      case "one":
+      case "home":
         singleSpa.navigateToUrl("/");
         break;
-      case "two":
+      case "app1":
         singleSpa.navigateToUrl("/app1");
+        break;
+      case "app2":
+        singleSpa.navigateToUrl("/footer");
         break;
       default:
         break;
@@ -33,8 +36,9 @@ export default function BasicTabs() {
         indicatorColor="primary"
         aria-label="secondary tabs example"
       >
-        <Tab value="one" label="Item One" />
-        <Tab value="two" label="Item Two" />
+        <Tab value="home" label="Home" />
+        <Tab value="app1" label="App1" />
+        <Tab value="app2" label="App2" />
       </Tabs>
     </Box>
   );

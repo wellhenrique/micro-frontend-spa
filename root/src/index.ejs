@@ -12,7 +12,7 @@
     browsers. More information at https://github.com/single-spa/create-single-spa/issues/112
   -->
   <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/zone.js@0.10.3/dist/zone.min.js"></script>
   <!--
     This CSP allows any SSL-enabled host and for arbitrary eval(), but you should limit these directives further to increase your app's security.
     Learn more about CSP policies at https://content-security-policy.com/#directive
@@ -52,7 +52,8 @@
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@mfe/root-config": "//localhost:9000/mfe-root-config.js",
         "@mfe/navbar": "//localhost:8080/mfe-navbar.js",
-        "@mfe/app1": "//localhost:8081/mfe-app1.js"
+        "@mfe/app1": "//localhost:8081/mfe-app1.js",
+        "@mfe/footer": "//localhost:4200/main.js"
       }
     }
   </script>
